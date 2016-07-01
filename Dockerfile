@@ -2,6 +2,8 @@ FROM nginx:1.10
 
 MAINTAINER Ali Al Amine
 
+ENV NGINX-NODE-VERSION 1.0
+
 RUN apt-get update \
 	&& apt-get install -y curl \
 	&& curl -sL https://deb.nodesource.com/setup_4.x | bash - \
